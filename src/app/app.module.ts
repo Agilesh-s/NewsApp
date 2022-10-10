@@ -5,17 +5,19 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { NewsComponent } from './news/news.component';
 
 const appRoutes:Routes = [
   {
-    // path:"",component:
+    path:"",component:NewsComponent
   }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,

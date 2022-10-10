@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div *ngFor = "let i of newsData.articles"  class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="card">
+                        <img src="{{i.urlToImage}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{i.title}}</h5>
+                          <p class="card-text">{{i.description}}</p>
+                          <a href="#" class="btn btn-primary">ENTER</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
